@@ -1,0 +1,275 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background: linear-gradient(to bottom, #00BFFF, #f1da36);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+
+.proj_title {
+    margin: 0;
+}
+
+.main_container {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.todo_list {
+    margin-top: 50px;
+    max-width: 1200px;
+    min-width: 700px
+}
+
+.todo_header {
+    background: linear-gradient(to bottom, #517fbb, #385e9d);
+    font-size: 1.4em;
+    padding: 13px 20px;
+    color: white;
+    border: 1px solid #315589;
+    letter-spacing: -1px;
+    text-align: left;
+}
+
+._bold {
+    font-weight: bold;
+}
+
+.todo_header input {
+    color: grey;
+}
+
+.todo_header:hover .editing {
+    display: inline-block;
+}
+
+.todo_header .editing {
+    font-size: 0.7em;
+    display: none;
+    color: #98b0d2;
+}
+
+.editing .separator {
+    font-size: 1.4em;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.todo_name {
+    width: 85%;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.todo_header .todo_title_editing {
+    display: inline-block;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.todo_header .todo_title_editing input {
+    font-size: 0.8em;
+    width: 150px;
+    font-weight: normal;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.edit_todo,
+.remove_todo {
+    cursor: pointer;
+}
+
+.date-icon {
+    color: #323c52;
+    margin-right: 9px;
+}
+
+.add_task {
+    border: 1px solid #8B8989;
+    border-top: none;
+    background: #cdcdcd;
+    padding: 12px;
+}
+
+.input-group {
+    z-index: 0;
+}
+
+.plus {
+    background: none;
+    color: #5a9171;
+    margin: 0px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 1.8em;
+}
+
+.new_task {
+    border: 1px solid #8B8989;
+    border-right: none;
+}
+
+.btn_add {
+    background: linear-gradient(to bottom, #90c7aa, #487b5d);
+    color: white;
+    cursor: pointer;
+    border: 1px solid #8B8989;
+    font-weight: bold;
+    margin: 44px 0;
+}
+
+.btn_add:hover {
+    background: linear-gradient(to top, #8FBC8F, #2E8B57);
+}
+
+.tasks {
+    text-align: left;
+    background: white;
+    border: 1px solid #8B8989;
+    border-top: none;
+    border-radius: 0 0 15px 15px;
+    overflow: hidden;
+
+}
+
+.task {
+    border-bottom: 1px solid #DCDCDC;
+}
+
+.task:last-child {
+    border: none;
+}
+
+.task:hover {
+    background: #fcfed5;
+}
+
+
+.invisible {
+    visibility: hidden;
+}
+
+.task .row > div {
+    padding: 10px 12px;
+    color: grey;
+    font-family: font-family: Geneva, Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.task .row > div:nth-child(1) {
+    padding-right: 9px;
+    width: 50px;
+    text-align: center;
+    margin-right: 4px;
+    border-right: 1px solid #DCDCDC;
+}
+
+.task .row > div:nth-child(2) {
+    border-left: 1px solid #DCDCDC;
+    padding-right: 0px;
+}
+
+.task .row div.stretching > span {
+    display: inline-block;;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.task .row div.stretching .task_title {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    border: none;
+    padding-right: none;
+}
+
+.task .row div.edit_item {
+    padding-right: 19px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    float: right;
+    width: 128px;
+    text-align: center;
+    border-left: 1px solid #DCDCDC;
+}
+
+.editing_field {
+    float: left;
+}
+
+.task .row div.edit_item > div {
+    width: 20%;
+    display: inline-block;
+    font-size: 0.8em;
+    border: none;
+}
+
+.task .row div.edit_item > div:nth-child(1) {
+    width: 80%;
+}
+
+.hide {
+    display: none;
+}
+
+.add_todo {
+    background: linear-gradient(to bottom, #517fbb, #385e9d);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 3px;
+    border: 1px solid #315589;
+    width: 200px;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0 auto;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+.add_todo:hover {
+    background: linear-gradient(to bottom, #517fbb, #323c52);
+}
+
+.add_todo span {
+    display: inline-block;
+    margin-top: -3px;
+    float: left;
+    font-size: 1.4em;
+    color: #323c52;
+}
+
+.stretching span.glyphicon {
+    cursor: pointer;
+}
+
+.copyright {
+    margin-top: 50px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.editing_menu {
+    padding: 2px 0px;
+}
+
+.editing_menu input {
+    width: 100px;
+    font-weight: normal;
+}
+
+.error {
+    position: fixed;
+    top: 75px;
+    left: 50%;
+    margin-left: -25%;
+    width: 50%;
+    font-weight: bold;
+}

@@ -1,0 +1,31 @@
+<div class = "todo_header">
+    <span class = "glyphicon glyphicon-th date-icon"></span>
+
+    <div class = "todo_name"> <%= title %> </div>
+
+    <div class = "todo_title_editing hide">
+        <input type = "text" class = "title_field" placeholder = "TODO title..." value = "<%= title %>" />
+        <button class = "btn-xs btn-primary save_header">Save</button>
+        <button class = "btn-xs btn-primary cancel_header">Cancel</button>
+    </div>
+
+    <div class = "editing pull-right">
+        <span class = "glyphicon glyphicon-pencil edit_todo"></span>
+        <span class = "separator">|</span>
+        <span class = "glyphicon glyphicon-trash remove_todo"></span>
+    </div>
+</div>
+
+<div class = "add_task">
+    <div class = "input-group">
+        <span class = "input-group-addon plus">
+            <span class = "glyphicon glyphicon-plus"></span>
+        </span>
+
+        <input type = "text" class = "form-control new_task" placeholder = "Start typeing here to create task..." />
+
+        <span class = "input-group-addon btn_add"> Add Task </span>
+    </div>
+</div>
+
+<div class = "tasks"></div>

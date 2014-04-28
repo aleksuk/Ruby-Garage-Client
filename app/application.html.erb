@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TODO</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel = "stylesheet" type = "text/css" href = "styles/bootstrap.min.css" />
+    <link rel = "stylesheet" type = "text/css" href = "styles/bootstrap-theme.min.css" />
+    <link rel = "stylesheet" type = "text/css" href = "styles/jquery-ui-1.10.4.custom.css" /> 
+    <link rel="stylesheet" href="styles/main.css" />
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/vendor.js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery/dist/jquery-setup.js"></script>
+    <script src="bower_components/jquery/dist/jquery-ui-1.10.4.custom.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/backbone/backbone.js"></script>
+    <script src="bower_components/backbone-mediator/backbone-mediator.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/templates.js"></script>
+    <script src="scripts/models/Task.js"></script>
+    <script src="scripts/views/Task.js"></script>
+    <script src="scripts/collections/Tasks.js"></script>
+    <script src="scripts/models/Todo.js"></script>
+    <script src="scripts/collections/Todo.js"></script>
+    <script src="scripts/views/Todo.js"></script>
+    <script src="scripts/views/TodoList.js"></script>
+    <script src="scripts/views/Error.js"></script>
+    <!-- endbuild -->
+</head>
+<body>
+
+    <div class = "error"></div>
+    <div class="container main_container"></div>
+
+</body>
+</html>

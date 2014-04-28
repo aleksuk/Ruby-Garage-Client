@@ -1,0 +1,32 @@
+<div class = "row">
+    <div class = "col-xs-1 chek stretching">
+        <input type = "checkbox" class = "is_complete pull-right"
+        <% if (isComplete) { %>
+           disabled = "disabled" checked = "checked"
+        <% } %>
+        ></input>
+        <span class = "invisible">1</span>  
+    </div>
+
+    <div class = "col-xs-9 stretching">
+        <div class = "task_title" title = "<%= title %>"> <%= title %> </div>
+
+        <div class = "editing_menu hide">
+            <input type = "text" class = "title_field " placeholder="Title..." value = "<%= title %>" />
+            <input type = "text" class = "deadline_field " placeholder = "Deadline..." value = "<%= deadline %>" />
+            <button class = "btn-xs btn-primary save_title">Save</button>
+            <button class = "btn-xs btn-primary cancel_title">Cancel</button>
+        </div>
+    </div>
+
+    <div class = "col-xs-1 edit_item">
+        <div class = "stretching">
+            <span class = "glyphicon glyphicon-sort sort_task"></span>
+            <span class = "separator">|</span>
+            <span class = "glyphicon glyphicon-pencil edit_task"></span>
+            <span class = "separator">|</span>
+            <span class = "glyphicon glyphicon-trash remove_task"></span>
+            <span class = "invisible">1</span>
+        </div>
+    </div> 
+</div>
